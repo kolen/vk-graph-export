@@ -1,7 +1,6 @@
 # app.yaml for hosting on Google App Engine
 # Uses only static file hosting functionality
 
-application: vk-graph-export
 version: 1
 runtime: python27
 api_version: 1
