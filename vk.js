@@ -123,7 +123,6 @@ window.vk.requester = function(id, is_detailed, on_result) {
 				items = _.map(data.response.items, function(id) {return {id: id}})
 			} else {
 				items = _.map(data.response.items, function(u) {
-					u.id = u.uid;
 					return u;
 				})
 			}
