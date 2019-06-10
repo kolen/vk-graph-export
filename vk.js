@@ -116,7 +116,7 @@ window.vk.requester = function(id, is_detailed, on_result) {
 		fields = ""
 	}
 
-	VK.api("friends.get", {fields: fields, uid: id, v: "5.21"}, function (data) {
+	VK.api("friends.get", {fields: fields, user_id: id, v: "5.21"}, function (data) {
 		if(data.response !== undefined) {
 			var items
 			if (!is_detailed) {
