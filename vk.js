@@ -120,9 +120,9 @@ window.vk.requester = function(id, is_detailed, on_result) {
 		if(data.response !== undefined) {
 			var items
 			if (!is_detailed) {
-				items = _.map(data.response, function(id) {return {id: id}})
+				items = _.map(data.response.items, function(id) {return {id: id}})
 			} else {
-				items = _.map(data.response, function(u) {
+				items = _.map(data.response.items, function(u) {
 					u.id = u.uid;
 					return u;
 				})
